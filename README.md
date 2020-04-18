@@ -14,6 +14,8 @@ A project to demonstrate student ability to prepare a tidy data set.
 
 # What we have in this repository 
 
-In "table.txt" we have the required tidy data set.
-In "run_analysis.R" there is the script I realized for performing the analysis
-In "CodeBook.md" you can find the description of the variables, the data, and the transformations I performed to clean up the data.
+- In "table.txt" we have the required tidy data set.
+
+- In "run_analysis.R" there is the script I realized for performing the analysis
+
+- In "CodeBook.md" you can find the description of the variables, the data, and the transformations I performed to clean up the data.
