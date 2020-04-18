@@ -46,6 +46,9 @@ meanstdcolandactandsub <- c(meanstdcolonly, 'activity', 'subject')
 # Select only required data (activity, subject, and mean and std measurements)
 meanstddataonly <- merged_train_test[, meanstdcolandactandsub]
 
+activities <- read.table('./UCI HAR Dataset/activity_labels.txt')
+meanstddataonly$activity <- factor(meanstddataonly$activity, labels = tolower(activities[, 2]))
+
 # 4. Appropriately labels the data set with descriptive variable names
 vnames <- names(meanstddataonly)
 
