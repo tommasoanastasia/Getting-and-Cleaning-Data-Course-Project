@@ -72,13 +72,11 @@ View(meanstddataonly)
 ##    for each activity and each subject
 
 final_dataset <- meanstddataonly %>% group_by(subject, activity)
+
 sum_mean <- final_dataset %>% summarise_all(.funs = mean)
+
 View(sum_mean)
 
 
 # submitting a tidy data set
 write.table(x = sum_mean, file = "table.txt", row.names = FALSE)
-
-
-
-
